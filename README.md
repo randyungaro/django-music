@@ -14,9 +14,10 @@
 
 3.	Access at http://127.0.0.1:8000/.
 
-   ![sc-1](https://github.com/user-attachments/assets/b0d60aff-7ed3-43ba-b53c-04edb1c2fa87)
+![sc-1](https://github.com/user-attachments/assets/f59fb72f-1f89-4461-bb63-9796552afa50)
 
-   ![sc-2](https://github.com/user-attachments/assets/2010bf18-f521-4b55-bb79-06b194db7c37)
+![sc-2](https://github.com/user-attachments/assets/6a575e77-3945-46d5-a25b-aba6594804f2)
+
 
 
 
@@ -25,7 +26,8 @@
      username  : admin
      password  : djangomusic
 
-   ![sc-3](https://github.com/user-attachments/assets/76f8cdb7-8b6c-4a41-9b5d-4422cc3feba3)
+   ![sc-3](https://github.com/user-attachments/assets/96ac7f8d-901b-4fef-8d16-193a5f72296b)
+
 
 
 ________________________________________
