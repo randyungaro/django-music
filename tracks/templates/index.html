@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="tracks">
+        <h2>Tracks</h2>
+        <ul>
+            {% for track in tracks %}
+                <li>
+                    <a href="{% url 'track_detail' track.pk %}">
+                        <img src="{{ track.cover_image.url|default:'/media/default.jpg' }}" alt="{{ track.title }}">
+                        {{ track.title }} - {{ track.artist }}
+                    </a>
+                </li>
+            {% empty %}
+                <p>No tracks available.</p>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="playlists">
+        <h2>Playlists</h2>
+        <ul>
+            {% for playlist in playlists %}
+                <li><a href="{% url 'playlist_detail' playlist.pk %}">{{ playlist.name }}</a></li>
+            {% empty %}
+                <p>No playlists available.</p>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

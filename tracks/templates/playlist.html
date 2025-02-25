@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>{{ playlist.name }}</h2>
+    <ul>
+        {% for track in playlist.tracks.all %}
+            <li>
+                <a href="{% url 'track_detail' track.pk %}">
+                    <img src="{{ track.cover_image.url|default:'/media/default.jpg' }}" alt="{{ track.title }}">
+                    {{ track.title }} - {{ track.artist }}
+                </a>
+            </li>
+        {% empty %}
+            <p>No tracks in this playlist.</p>
+        {% endfor %}
+    </ul>
+{% endblock %}

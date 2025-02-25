@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: #00b4d8;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tracks ul, .playlists ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.tracks li, .playlists li {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tracks img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.track-detail {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.track-detail img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+audio {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0077b6;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1a1a1a;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* static/css/style.css */
+.player-controls {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-controls button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.player-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
